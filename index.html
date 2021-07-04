@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Audio Player</title>
+
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- font family -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- font icon -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="top-bar">
+                <div class="btn">
+                    <i class="material-icons">expand_more</i>
+                </div>
+                <div class="title">Now Playing</div>
+                <div class="btn">
+                    <i class="material-icons">more_horiz</i>
+                </div>
+            </div>
+            <div class="song-thumb">
+                <img src="" alt="">
+            </div>
+            <div class="song-details">
+                <p class="name">name</p>
+                <p class="artist">artist</p>
+            </div>
+            <div class="progress-area">
+                <div class="progress-bar">
+                  <audio id="main_audio" src=""></audio>
+                </div>
+                <div class="song-timer">
+                  <span class="current-time">0:00</span>
+                  <span class="max-duration">0:00</span>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="btn">
+                    <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+                </div>
+                <div class="btn --prev">
+                    <i id="prev" class="material-icons">skip_previous</i>
+                </div>
+                <div class="btn --play-pause js-play-pause">
+                    <i class="material-icons play">play_arrow</i>
+                </div>
+                <div class="btn --next">
+                    <i id="next" class="material-icons">skip_next</i>
+                </div>
+                <div class="btn js-show-list-music">
+                    <i id="more-music" class="material-icons">queue_music</i>
+                </div>
+            </div>
+            <div class="music-list">
+                <div class="header">
+                    <div class="header__content">
+                        <div class="btn">
+                            <i class= "list material-icons">queue_music</i>
+                        </div>
+                        <div class="title">Music list</div>
+                    </div>
+                    <div class="btn js-hide-list-music">
+                        <i id="close" class="material-icons">close</i>
+                    </div>
+                </div>
+                <div class="content"></div>
+            </div>
+        </div>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
